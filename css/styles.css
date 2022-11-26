@@ -68,22 +68,19 @@ body {
 }
 
 /* -------------HEADER--------------- */
+
 /* ---------logo-------- */
-header {
+.page-header {
   border-bottom: #ececec solid 1px;
 }
 
-header .container {
+.page-header__container {
   width: 1200px;
   display: flex;
   align-items: center;
 }
 
-.header-logo {
-  margin-right: 91px;
-}
-
-.logo-first {
+.logo {
   color: var(--accent-color);
   text-decoration: none;
   font-family: "Raleway";
@@ -94,22 +91,22 @@ header .container {
   letter-spacing: 0.03em;
 }
 
-.logo-second {
+.logo__part {
   color: var(--primary-black-color);
 }
 
-/* ---------Site nav-------- */
-.site-nav {
+/* ---------Site nav__------- */
+.nav__list {
   display: flex;
   gap: 50px;
-  margin-right: 318px;
+  margin-right: 315px;
+  margin-left: 91px;
 }
 
-.site-nav .link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* text-align: center; */
 
   color: var(--text-main-color);
   text-decoration: none;
@@ -123,20 +120,20 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav-item {
+.nav__item {
   position: relative;
 }
 
-.site-nav .link.current {
+.nav__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.nav__link--current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -149,7 +146,7 @@ header .container {
   /* padding-bottom: 20px; */
 }
 
-.email-icon {
+.email__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -160,7 +157,7 @@ header .container {
   margin-right: 30px;
 }
 
-.tel-icon {
+.tel__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -211,11 +208,11 @@ header .container {
   padding-top: 200px;
 }
 
-.hero .container {
+/* .hero__container {
   margin: auto;
-}
+} */
 
-.hero .title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -225,7 +222,7 @@ header .container {
   width: 696px;
 }
 
-.hero .button {
+.hero__button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: inherit;
@@ -241,12 +238,12 @@ header .container {
   cursor: pointer;
 }
 
-.feauter-section {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.feature .feature-title {
+.feature__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -254,12 +251,12 @@ header .container {
   text-transform: uppercase;
 }
 
-.feature-block {
+.feature__block {
   display: block;
   width: 270px;
 }
 
-.feature-logo {
+.feature__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,18 +268,18 @@ header .container {
   background-position: center;
 }
 
-.feature-item-logo {
+.feature__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.feature {
+.feature__list {
   display: flex;
   justify-content: space-between;
 }
 
-.feature .description {
+.feature__description {
   color: var(--description-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -298,7 +295,7 @@ header .container {
   letter-spacing: 0.03em;
 }
 
-.examples-section {
+.examples {
   padding-bottom: 94px;
 }
 
@@ -474,7 +471,7 @@ header .container {
   margin-bottom: 20px;
 }
 
-footer .logo-second {
+footer .logo__part {
   color: var(--primary-white-color);
 }
 

@@ -24,30 +24,28 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <a href="" class="header-logo logo logo-first"
-          >Web<span class="logo-second">Studio</span></a
-        >
-        <nav>
-          <ul class="site-nav list">
-            <li class="site-nav-item">
-              <a href="" class="link current">Студія</a>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a href="" class="logo">Web<span class="logo__part">Studio</span></a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="" class="nav__link nav__link--current">Студія</a>
             </li>
-            <li class="site-nav-item">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
             </li>
-            <li class="site-nav-item"><a href="" class="link">Контакти</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
         <a href="mailto:info@devstudio.com" class="email">
-          <svg class="email-icon" width="16" height="12">
+          <svg class="email__icon" width="16" height="12">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com</a
         >
         <a href="tel:+380961111111" class="tel">
-          <svg class="tel-icon" width="10" height="16">
+          <svg class="tel__icon" width="10" height="16">
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
           +38 096 111 11 11</a
@@ -57,60 +55,60 @@
 
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button" data-modal-open>
+        <div class="hero__container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__button button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <section class="feauter-section section">
+      <section class="feature section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="list feature">
-            <li class="feature-block">
-              <div class="feature-logo">
-                <svg class="feature-item-logo" width="70" height="70">
+          <ul class="list feature__list">
+            <li class="feature__block">
+              <div class="feature__logo">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Увага до деталей</h3>
-              <p class="description">
+              <h3 class="feature__title">Увага до деталей</h3>
+              <p class="feature__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="feature-block">
-              <div class="feature-logo">
-                <svg class="feature-item-logo" width="70" height="70">
+            <li class="feature__block">
+              <div class="feature__logo">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Пунктуальність</h3>
-              <p class="description">
+              <h3 class="feature__title">Пунктуальність</h3>
+              <p class="feature__description">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="feature-block">
-              <div class="feature-logo">
-                <svg class="feature-item-logo" width="70" height="70">
+            <li class="feature__block">
+              <div class="feature__logo">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Планування</h3>
-              <p class="description">
+              <h3 class="feature__title">Планування</h3>
+              <p class="feature__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="feature-block">
-              <div class="feature-logo">
-                <svg class="feature-item-logo" width="70" height="70">
+            <li class="feature__block">
+              <div class="feature__logo">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Сучасні технології</h3>
-              <p class="description">
+              <h3 class="feature__title">Сучасні технології</h3>
+              <p class="feature__description">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -118,7 +116,7 @@
           </ul>
         </div>
       </section>
-      <section class="examples-section section">
+      <section class="examples section">
         <div class="container">
           <h2 class="examples-section-title section-title">
             Чим ми займаємося
@@ -485,8 +483,8 @@
       <div class="container">
         <div class="footer-info">
           <div class="footer-address">
-            <a href="" class="footer-logo logo logo-first"
-              >Web<span class="logo-second">Studio</span></a
+            <a href="" class="footer-logo logo"
+              >Web<span class="logo__part">Studio</span></a
             >
             <address>
               <ul class="list">
