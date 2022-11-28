@@ -11,11 +11,18 @@
 :root {
   --description-text-color: #757575;
   --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
   --primary-white-color: #ffffff;
   --text-main-color: #212121;
   --primary-black-color: #000000;
-  --secondary-background-color: #2f303a;
+  --secondary-background-color: rgb(47, 48, 58);
   --last-section-color: #f5f4fa;
+  --header-border-color: #ececec;
+  --gradient-color: rgba(47, 48, 58, 0.4);
+  --thumb-background-color: rgba(47, 48, 58, 0.8);
+  --icon-primary-color: #afb1b8;
+  --icon-background-color: rgba(255, 255, 255, 0.1);
+  --card-border-color: #eeeeee;
 }
 /* Reset */
 .list {
@@ -71,7 +78,7 @@ body {
 
 /* ---------logo-------- */
 .page-header {
-  border-bottom: #ececec solid 1px;
+  border-bottom: var(--header-border-color) solid 1px;
 }
 
 .page-header__container {
@@ -196,8 +203,8 @@ body {
   margin: 0 auto;
   background-color: var(--secondary-background-color);
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--gradient-color),
+      var(--gradient-color)
     ),
     url(../images/main.jpg);
   background-repeat: no-repeat;
@@ -236,6 +243,11 @@ body {
   padding: 10px 32px;
   margin-top: 30px;
   cursor: pointer;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: var(--secondary-accent-color);
 }
 
 .feature {
@@ -313,7 +325,7 @@ body {
   position: absolute;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--thumb-background-color);
   width: 100%;
   left: 0;
   bottom: 0;
@@ -378,7 +390,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #afb1b8;
+  color: var(--icon-primary-color);
 }
 
 .socials__link {
@@ -389,7 +401,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-white-color);
-  color: #afb1b8;
+  color: var(--icon-primary-color);
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -401,8 +413,8 @@ body {
 
 .socials__link:hover,
 .socials__link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 /* ---------Section Clients-------- */
@@ -410,7 +422,6 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f5f5;
 }
 
 .clients__list {
@@ -425,9 +436,9 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-primary-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--icon-primary-color);
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,7 +539,7 @@ body {
 
 .socials__link--round {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--icon-background-color);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -558,8 +569,9 @@ body {
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: rgba(47, 48, 58, 1);
+  background-color: var(--secondary-background-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer__button {
@@ -631,7 +643,7 @@ body {
   width: 528px;
   min-height: 581px;
 
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -659,13 +671,13 @@ body {
   height: 30px;
   border-radius: 50%;
 
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 .modal-btn:hover {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 .form-description {
@@ -676,7 +688,7 @@ body {
   line-height: calc(23 / 20);
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-main-color);
 }
 
 .modal-form {
@@ -698,7 +710,7 @@ body {
 .modal-label {
   font-size: 12px;
   font-weight: calc(14 / 12);
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 .input-container {
@@ -727,7 +739,7 @@ body {
 
 .coment:focus {
   outline: 0;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
 }
 
 .form-field textarea::placeholder {
@@ -747,7 +759,7 @@ body {
 
 .input-field:focus {
   outline: 0;
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
 }
 
 .input-icon {
@@ -762,7 +774,7 @@ body {
 }
 
 .input-field:focus + .input-icon {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .checkbox {
@@ -777,7 +789,7 @@ body {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--text-main-color);
   border-radius: 2px;
   transition-property: border-color, background-color;
   transition-duration: 250ms;
@@ -786,7 +798,7 @@ body {
 
 .checkbox-field:checked {
   border-color: transparent;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   background-image: url(../images/icon-check1.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -797,11 +809,11 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 .terms {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .modal-submit-button {
@@ -811,10 +823,10 @@ body {
   margin-top: 30px;
   width: 200px;
   height: 50px;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -826,7 +838,7 @@ body {
 }
 
 .modal-submit-button:hover {
-  background-color: #188ce8;
+  background-color: var(--secondary-accent-color);
 }
 
 /* -----------------------Portfolio---------------------- */
@@ -929,9 +941,9 @@ body {
 
 .works__wrapper {
   padding: 20px 24px;
-  border-left: #eeeeee solid 1px;
-  border-right: #eeeeee solid 1px;
-  border-bottom: #eeeeee solid 1px;
+  border-left: var(--card-border-color) solid 1px;
+  border-right: var(--card-border-color) solid 1px;
+  border-bottom: var(--card-border-color) solid 1px;
 }
 
 .works__name {
