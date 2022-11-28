@@ -8,7 +8,7 @@
 /* цвет фона 1-й секции и футера #2F303A */
 /* цвет фона последней секции F5F4FA */
 
-:root {
+/* :root {
   --description-text-color: #757575;
   --accent-color: #2196f3;
   --secondary-accent-color: #188ce8;
@@ -23,12 +23,20 @@
   --icon-primary-color: #afb1b8;
   --icon-background-color: rgba(255, 255, 255, 0.1);
   --card-border-color: #eeeeee;
-}
+  --anim-type: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
 /* Reset */
-.list {
+
+/* .list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 h1,
@@ -45,23 +53,16 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-body {
+/* body {
   background-color: var(--primary-white-color);
   color: var(--text-main-color);
   font-family: Roboto, Verdana, sans-serif;
-}
+  letter-spacing: 0.03em;
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -72,7 +73,15 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
+
+/* .container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
 
 /* -------------HEADER--------------- */
 
@@ -95,7 +104,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(36 / 26);
-  letter-spacing: 0.03em;
 }
 
 .logo__part {
@@ -123,8 +131,7 @@ body {
   letter-spacing: 0.02em;
   padding-bottom: 28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .nav__link:hover,
@@ -183,8 +190,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .email:hover,
@@ -214,10 +220,6 @@ body {
   padding-bottom: 200px;
   padding-top: 200px;
 }
-
-/* .hero__container {
-  margin: auto;
-} */
 
 .hero__title {
   font-weight: 900;
@@ -259,7 +261,6 @@ body {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -295,7 +296,6 @@ body {
   color: var(--description-text-color);
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* ---------Examples-------- */
@@ -304,7 +304,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -373,7 +372,6 @@ body {
   font-size: 16px;
   line-height: calc(19 / 19);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team__position {
@@ -382,7 +380,6 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .socials {
@@ -403,8 +400,7 @@ body {
   background-color: var(--primary-white-color);
   color: var(--icon-primary-color);
   transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .socials__icon {
@@ -440,8 +436,7 @@ body {
   border-radius: 4px;
   color: var(--icon-primary-color);
   transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .client__logo {
@@ -483,10 +478,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .address:hover,
@@ -510,10 +503,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71x;
-  letter-spacing: 0.03em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .footer__address {
@@ -541,8 +532,7 @@ body {
   color: #ffffff;
   background-color: var(--icon-background-color);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .socials__link--round:hover {
@@ -610,7 +600,6 @@ body {
 .label-email {
   font-size: 16px;
   line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 /* -----------------------Modal window---------------------- */
@@ -687,7 +676,6 @@ body {
   font-size: 20px;
   line-height: calc(23 / 20);
   font-weight: 700;
-  letter-spacing: 0.03em;
   color: var(--text-main-color);
 }
 
@@ -733,8 +721,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .coment:focus {
@@ -753,8 +740,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .input-field:focus {
@@ -769,8 +755,7 @@ body {
   transform: translateY(-50%);
   fill: currentColor;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .input-field:focus + .input-icon {
@@ -792,8 +777,7 @@ body {
   border: 2px solid var(--text-main-color);
   border-radius: 2px;
   transition-property: border-color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .checkbox-field:checked {
@@ -808,7 +792,6 @@ body {
 .checkbox-text {
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--description-text-color);
 }
 
@@ -833,8 +816,7 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 15%);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .modal-submit-button:hover {
@@ -866,11 +848,9 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
   transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .filters__button:hover,
@@ -922,8 +902,7 @@ body {
   background-color: var(--primary-white-color);
   width: 370px;
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-type);
 }
 
 .works__card:hover {
@@ -958,5 +937,4 @@ body {
   color: var(--description-text-color);
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
