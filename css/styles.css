@@ -85,8 +85,7 @@ img {
 
 /* -------------HEADER--------------- */
 
-/* ---------logo-------- */
-.page-header {
+/* .page-header {
   border-bottom: var(--header-border-color) solid 1px;
 }
 
@@ -96,7 +95,9 @@ img {
   align-items: center;
 }
 
-.logo {
+/* ---------logo-------- */
+
+/* .logo {
   color: var(--accent-color);
   text-decoration: none;
   font-family: "Raleway";
@@ -108,10 +109,10 @@ img {
 
 .logo__part {
   color: var(--primary-black-color);
-}
+} */
 
 /* ---------Site nav__------- */
-.nav__list {
+/* .nav__list {
   display: flex;
   gap: 50px;
   margin-right: 315px;
@@ -157,7 +158,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  /* padding-bottom: 20px; */
 }
 
 .email__icon {
@@ -201,10 +201,10 @@ img {
 .tel:hover,
 .tel:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ---------Main-------- */
-.hero {
+/* .hero {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--secondary-background-color);
@@ -250,9 +250,9 @@ img {
 .hero__button:hover,
 .hero__button:focus {
   background-color: var(--secondary-accent-color);
-}
+} */
 
-.feature {
+/* .feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -296,11 +296,11 @@ img {
   color: var(--description-text-color);
   font-size: 14px;
   line-height: 1.71;
-}
+} */
 
 /* ---------Examples-------- */
 
-.section-title {
+/* .section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -338,11 +338,11 @@ img {
   letter-spacing: 3%;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
+} */
 
 /* ---------Section Team-------- */
 
-.team {
+/* .team {
   background-color: var(--last-section-color);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -380,9 +380,9 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-}
+} */
 
-.socials {
+/* .socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,11 +411,11 @@ img {
 .socials__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* ---------Section Clients-------- */
 
-.clients {
+/* .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -447,10 +447,10 @@ img {
 .clients__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
+} */
 
 /* ---------Footer-------- */
-.footer {
+/* .footer {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -466,11 +466,11 @@ img {
   margin-bottom: 20px;
 }
 
-.logo__part--white {
+/* .logo__part--white {
   color: var(--primary-white-color);
-}
+} */
 
-.address {
+/* .address {
   display: block;
   margin-bottom: 9px;
   color: var(--primary-white-color);
@@ -602,9 +602,9 @@ img {
   line-height: calc(20 / 16);
   color: rgba(255, 255, 255, 0.6);
 }
-/* -----------------------Modal window---------------------- */
+-----------------------Modal window---------------------- */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -621,9 +621,9 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -821,11 +821,11 @@ img {
 
 .modal-submit-button:hover {
   background-color: var(--secondary-accent-color);
-}
+} */
 
 /* -----------------------Portfolio---------------------- */
 
-.portfolio-section {
+/* .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -937,4 +937,4 @@ img {
   color: var(--description-text-color);
   font-size: 16px;
   line-height: 1.88;
-}
+} */
